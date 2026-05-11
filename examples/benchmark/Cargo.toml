@@ -1,0 +1,17 @@
+[package]
+name = "benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }
+ce_ecs = { workspace = true }
+ce_math = { workspace = true }
+ce_app = { workspace = true }
+ce_scene = { workspace = true }
+ce_physics = { workspace = true }
+ce_chemistry = { workspace = true }
+ce_ai = { workspace = true }
+ce_interaction = { workspace = true }
+ce_worldgen = { workspace = true }
+ce_render = { workspace = true }

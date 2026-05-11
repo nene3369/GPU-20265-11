@@ -1,0 +1,7 @@
+[package]
+name = "ce_ecs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }

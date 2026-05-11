@@ -1,0 +1,12 @@
+[package]
+name = "ce_compute"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }
+ce_ecs = { workspace = true }
+ce_app = { workspace = true }
+wgpu = { workspace = true }
+rayon = { workspace = true }
+log = { workspace = true }

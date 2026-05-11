@@ -1,0 +1,64 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ce_core",
+    "crates/ce_math",
+    "crates/ce_ecs",
+    "crates/ce_app",
+    "crates/ce_window",
+    "crates/ce_render",
+    "crates/ce_compute",
+    "crates/ce_xr",
+    "crates/ce_physics",
+    "crates/ce_chemistry",
+    "crates/ce_ai",
+    "crates/ce_worldgen",
+    "crates/ce_scene",
+    "crates/ce_interaction",
+    "examples/hello_triangle",
+    "examples/gpu_particles",
+    "examples/world_demo",
+    "examples/benchmark",
+    "examples/upscale_demo",
+    "examples/vr_stereo_demo",
+]
+
+[workspace.dependencies]
+# Math
+glam = "0.29"
+
+# XR / VR
+openxr = "0.19"
+
+# Rendering
+wgpu = "24"
+winit = "0.30"
+bytemuck = { version = "1", features = ["derive"] }
+pollster = "0.4"
+
+# Compute (optional)
+rayon = "1.10"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Internal crates
+ce_core = { path = "crates/ce_core" }
+ce_math = { path = "crates/ce_math" }
+ce_ecs = { path = "crates/ce_ecs" }
+ce_app = { path = "crates/ce_app" }
+ce_window = { path = "crates/ce_window" }
+ce_render = { path = "crates/ce_render" }
+ce_compute = { path = "crates/ce_compute" }
+ce_xr = { path = "crates/ce_xr" }
+ce_physics = { path = "crates/ce_physics" }
+ce_chemistry = { path = "crates/ce_chemistry" }
+ce_ai = { path = "crates/ce_ai" }
+ce_worldgen = { path = "crates/ce_worldgen" }
+ce_scene = { path = "crates/ce_scene" }
+ce_interaction = { path = "crates/ce_interaction" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"

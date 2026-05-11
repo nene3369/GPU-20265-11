@@ -1,0 +1,11 @@
+[package]
+name = "ce_scene"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }
+ce_ecs = { workspace = true }
+ce_math = { workspace = true }
+ce_app = { workspace = true }
+log = { workspace = true }

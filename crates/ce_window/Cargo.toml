@@ -1,0 +1,11 @@
+[package]
+name = "ce_window"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }
+ce_ecs = { workspace = true }
+ce_app = { workspace = true }
+winit = { workspace = true }
+log = { workspace = true }

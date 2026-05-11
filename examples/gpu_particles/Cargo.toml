@@ -1,0 +1,18 @@
+[package]
+name = "gpu_particles"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ce_core = { workspace = true }
+ce_ecs = { workspace = true }
+ce_app = { workspace = true }
+ce_window = { workspace = true }
+ce_render = { workspace = true }
+ce_compute = { workspace = true }
+wgpu = { workspace = true }
+winit = { workspace = true }
+bytemuck = { workspace = true }
+pollster = { workspace = true }
+env_logger = { workspace = true }
+log = { workspace = true }
